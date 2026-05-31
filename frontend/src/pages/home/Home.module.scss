@@ -1,0 +1,6 @@
+.home {
+  position: relative;
+
+  /* First screen = header + hero only, no extra scroll from hero overflow */
+  min-height: 0;
+}
