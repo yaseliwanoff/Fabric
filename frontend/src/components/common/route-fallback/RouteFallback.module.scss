@@ -1,0 +1,13 @@
+.fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  width: 100%;
+
+  &__label {
+    color: var(--gray-dark-color);
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+  }
+}
