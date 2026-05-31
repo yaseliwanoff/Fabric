@@ -4,11 +4,8 @@ import styles from "./NoiseWrapper.module.scss";
 
 export type NoiseWrapperProps = ComponentPropsWithoutRef<"div"> & {
   children: ReactNode;
-  /** Root wrapper: size, radius, positioning for each usage */
   className?: string;
-  /** Inner content wrapper (img, video, block) */
   contentClassName?: string;
-  /** Noise overlay layer */
   overlayClassName?: string;
   visibility?: number;
   motion?: number;
