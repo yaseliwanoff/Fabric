@@ -3,6 +3,8 @@ import { headerNavMenu } from "@mocks/header/nav";
 
 import styles from "./Header.module.scss";
 
+// TODO: Переделать, убрать flex реализацию и закинуть все в один див
+
 export function Header() {
   return (
     <header className={`${styles.header}`}>
