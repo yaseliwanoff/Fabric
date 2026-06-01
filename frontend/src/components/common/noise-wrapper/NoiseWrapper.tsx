@@ -26,8 +26,12 @@ export function NoiseWrapper({
   ...rest
 }: NoiseWrapperProps) {
   const rootClassName = [styles.wrapper, className].filter(Boolean).join(" ");
-  const contentClass = [styles.wrapper__content, contentClassName].filter(Boolean).join(" ");
-  const overlayClass = [styles.wrapper__noise, overlayClassName].filter(Boolean).join(" ");
+  const contentClass = [styles.wrapper__content, contentClassName]
+    .filter(Boolean)
+    .join(" ");
+  const overlayClass = [styles.wrapper__noise, overlayClassName]
+    .filter(Boolean)
+    .join(" ");
 
   const visibilityValue = clamp01(visibility);
   const motionValue = clamp01(motion);
