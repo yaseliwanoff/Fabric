@@ -9,7 +9,7 @@ function Hero() {
         className={styles.hero__noise}
         contentClassName={styles.hero__content}
         visibility={1.78}
-        motion={1.18}
+        motion={2.18}
       >
         <video
           className={styles.hero__video}
