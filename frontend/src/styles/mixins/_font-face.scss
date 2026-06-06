@@ -3,6 +3,7 @@
   @font-face {
     font-family: "#{$font-family}";
     src:
+      url("/fonts/ttf/#{$url}.ttf") format("truetype"),
       url("/fonts/woff2/#{$url}.woff2") format("woff2"),
       url("/fonts/woff/#{$url}.woff") format("woff");
     font-weight: $weight;
