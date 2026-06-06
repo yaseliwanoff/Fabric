@@ -3,33 +3,28 @@ import { headerNavMenu } from "@mocks/header/nav";
 
 import styles from "./Header.module.scss";
 
-// TODO: Переделать, убрать flex реализацию и закинуть все в один див
-
 export function Header() {
   return (
-    <header className={`${styles.header}`}>
+    <header className={styles.header}>
       <div className={styles.header__wrapper}>
-        <Link className={styles["header__wrapper--logo"]} to={"/"}>
+        <Link className={styles.header__logo} to={"/"}>
           <img src="/images/png/logo.png" alt="logo" />
         </Link>
-        <nav
-          className={styles["header__wrapper--nav"]}
-          aria-label="Main navigation"
-        >
+        <nav className={styles.header__nav} aria-label="Main navigation">
           <ul className={styles.nav__list}>
             {headerNavMenu.map((item) => (
-              <li key={item.id} className={styles.nav__item}>
+              <li key={item.id}>
                 <Link className={styles.nav__link} to={item.link}>
                   {item.name}
                   {item?.count && (
-                    <p className={styles.nav__count}>{item.count}</p>
+                    <span className={styles.nav__count}>{item.count}</span>
                   )}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
-        <button className={styles["header__wrapper--burger"]}>
+        <button className={styles.header__burger}>
           <img src="/icons/burger.svg" alt="burger" title="Открыть меню" />
         </button>
       </div>
